@@ -16,6 +16,7 @@ const imageRoute = require("./routes/imageRoute");
 
 // database and middlwares
 const app = express();
+console.log("MongoDB URI:", process.env.MONGO_URI);
 ConnectDB();
 app.use(express.json());
 app.use(morgan("dev"));
