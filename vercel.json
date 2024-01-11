@@ -4,6 +4,6 @@
   "builds": [{ "src": "server.js", "use": "@vercel/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/server.js" }],
   "env": {
-    "MONGO_URI": "@your-mongo-uri"
+    "MONGO_URI": "mongodb+srv://manishpandey6569:rnbZhBoBlU6dYXGY@cluster9.k3ygrbb.mongodb.net/shikharji?retryWrites=true&w=majority"
   }
 }
