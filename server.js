@@ -26,12 +26,12 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use("/tirthankar", tirthankarRoute);
 app.use("/diary", travelDiaryRoute);
-app.use("/api/blog", blogRoute);
+app.use("/blog", blogRoute);
 app.use("/user", userRoute);
 app.use("/temple", templeRoute);
 app.use("/sikharji", sikharjiRoute);
 app.use("/jainism", JainismRoute);
-app.use("/api/image", imageRoute);
+app.use("/image", imageRoute);
 
 app.listen(process.env.PORT, () => {
   console.log(`server is listening at ${process.env.PORT} `);
